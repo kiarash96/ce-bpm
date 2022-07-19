@@ -13,3 +13,9 @@ services:
       - MYSQL_USER=camunda
       - MYSQL_PASSWORD=camunda
 
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+
